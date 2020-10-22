@@ -1,0 +1,16 @@
+version: "3"
+
+services:
+    app-desafio:
+        build: ./DHB-desafio_php/
+        ports: 
+          - "8888:80"
+        volumes: 
+          - ./DHB-desafio_php/:/var/www/html
+
+    app-calculadora:
+        build: ./calculadoraJS/
+        ports: 
+            - "8887:80"
+        volumes: 
+            - ./calculadoraJS/:/var/www/html

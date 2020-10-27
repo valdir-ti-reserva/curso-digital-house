@@ -2,13 +2,17 @@ const http = require('http');
 
 const Cache = require('./utils/cache');
 const mercadolivre = require('./services/MercadoLivre');
+const zoom = require('./services/Zoom');
 
 const PORT = 3325;
 
-const app = http.createServer(async(req, res)=>{
+const app = http.createServer();
   
-  let term = req.url.replace('/', '');
+app.on('request', async(req, res)=>{
 
+  let term = req.url.replace('/', '');
+  // let term = req.url.replace('/', '').replace(/-/g, "%20");
+  
   if(term.length <= 0){
     res.writeHead(400, {'Content-Type': 'application/json; charset=utf-8'});
     res.write(JSON.stringify("Termo de busca não informado"));
@@ -22,7 +26,8 @@ const app = http.createServer(async(req, res)=>{
     return res.end();
   }
 
-  const products = await mercadolivre.getProductsByTerm(term);
+  //const products = await mercadolivre.getProductsByTerm(term);
+  const products = await zoom.getProductsByTerm(term);
 
   if(products.error == true){
     res.writeHead(503, {'Content-Type': 'application/json; charset=utf-8'});
@@ -37,5 +42,6 @@ const app = http.createServer(async(req, res)=>{
   return res.end();
 
 });
+
 
 app.listen(PORT);

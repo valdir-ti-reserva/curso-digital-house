@@ -41,7 +41,7 @@ USE `qrcode`;
 insert into cliente (nome,cpf,cnpj,endereco) values('Valdir','21472876343',null,'rua 1');
 insert into cliente (nome,cpf,cnpj,endereco) values('Davi','21472873353',null,'rua 2');
 insert into cliente (nome,cpf,cnpj,endereco) values('Marcelo','21472873243',null,'rua 3');
-insert into cliente (nome,cpf,cnpj,endereco) values('Jonatan','21472873343',null,'Avenida América');
+insert into cliente (nome,cpf,cnpj,endereco) values('Jonatan','21472873343',null,'Avenida Amï¿½rica');
 insert into cliente (nome,cpf,cnpj,endereco) values('Maria','21472873342',null,'rua 4');
 select * from cliente;
 

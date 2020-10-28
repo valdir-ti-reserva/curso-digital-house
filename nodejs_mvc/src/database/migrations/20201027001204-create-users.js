@@ -2,9 +2,7 @@
 
 module.exports = {
   up: async (queryInterface, Sequelize) => {
-    
     await queryInterface.createTable('users', {
-      
       id: {
         primaryKey: true,
         autoIncrement: true,
@@ -22,20 +20,16 @@ module.exports = {
       },
       createdAt: {
         allowNull: false,
-        type: Sequelize.DATE
+        type: Sequelize.DATE,
       },
       updatedAt: {
         allowNull: false,
-        type: Sequelize.DATE
-      }
-
+        type: Sequelize.DATE,
+      },
     });
-    
   },
 
   down: async (queryInterface) => {
-    
     await queryInterface.dropTable('users');
-    
-  }
+  },
 };

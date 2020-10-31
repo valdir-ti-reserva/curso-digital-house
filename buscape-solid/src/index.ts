@@ -1,3 +1,4 @@
+require("dotenv").config();
 import "reflect-metadata";
 import express from "express";
 import { createConnection } from "typeorm";
@@ -14,5 +15,7 @@ createConnection(connectionOptions).then((connection) => {
   app.use(authRoutes);
   app.use("/user", userRoutes);
   app.use("/product", productRoutes);
-  app.listen(3000, () => console.log("Servidor rodando na porta: 3000"));
+  app.listen(process.env.API_PORT, () =>
+    console.log(`Servidor rodando na porta: ${process.env.API_PORT}`)
+  );
 });

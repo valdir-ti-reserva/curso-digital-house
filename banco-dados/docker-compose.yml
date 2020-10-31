@@ -1,16 +1,26 @@
 version: "3"
 
-services: 
+services:
   mysql:
     image: mysql:5.7
     command: mysqld --sql_mode=""
     ports:
       - "3306:3306"
-    restart: always    
-    volumes: 
+    restart: always
+    volumes:
       - /var/lib/mysql
     environment:
       MYSQL_ROOT_PASSWORD: root
       MYSQL_DATABASE: db
       MYSQL_USER: root
-      MYSQL_PASSWORD: root123      
+      MYSQL_PASSWORD: root123
+  # mysqlinit:
+  #   image: mysql:5.7
+  #   volumes:
+  #     - ./backup.sql:/dump/backup.sql
+  #   command: bash -c "sleep 20 && mysql -h mysql -uroot -proot db < /dump/backup.sql"
+
+  # Backup
+  # docker exec bancodados_mysql_1 /usr/bin/mysqldump -u root --password=root db > backup.sql
+  # Restore
+  # cat backup.sql | docker exec -i bancodados_mysql_1 /usr/bin/mysql -u root --password=root db

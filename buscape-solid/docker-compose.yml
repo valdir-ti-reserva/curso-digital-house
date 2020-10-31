@@ -12,4 +12,4 @@ services:
       MYSQL_ROOT_PASSWORD: root
       MYSQL_DATABASE: fake-buscape
       MYSQL_USER: root
-      MYSQL_PASSWORD: root
+      MYSQL_PASSWORD: root123

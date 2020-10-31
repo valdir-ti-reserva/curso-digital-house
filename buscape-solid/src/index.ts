@@ -14,5 +14,5 @@ createConnection(connectionOptions).then((connection) => {
   app.use(authRoutes);
   app.use("/user", userRoutes);
   app.use("/product", productRoutes);
-  app.listen(3000, () => console.log("Servidor rodando"));
+  app.listen(3000, () => console.log("Servidor rodando na porta: 3000"));
 });

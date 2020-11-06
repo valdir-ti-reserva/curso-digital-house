@@ -12,6 +12,7 @@ header {
 header a{
   text-decoration: none;
   margin-left: 10rem;
+  color: #fff;
 }
 
 header .nav {

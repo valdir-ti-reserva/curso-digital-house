@@ -1,0 +1,46 @@
+main{
+  height: 60rem;
+  background: #2d46b9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 15rem;
+}
+
+main .container {
+  width: 50rem;
+  height: 50rem;
+  display: block;
+  justify-content: center;
+}
+
+main h1{  
+  font-size: 10rem;
+  font-weight: bold;
+  color: #1ED760;
+  text-align: center;
+}
+
+main p{
+  text-align: center;
+  color: #1ED760;
+  font-size: 1.2rem;
+}
+
+main .button{
+  display: flex;
+  justify-content: center;
+}
+main button {
+  background-color: #1ED760;
+  border: 0;
+  padding: 1rem;
+  border-radius: 2rem;
+  color: #2d46b9;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 0;
+  margin-top: 3rem;
+  width: 18rem;
+  letter-spacing: 1px;
+}

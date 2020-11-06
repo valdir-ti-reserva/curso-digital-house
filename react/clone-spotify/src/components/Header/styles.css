@@ -1,0 +1,48 @@
+header {
+  display: flex;
+  background: #000;
+  color: #fff;
+  justify-content: space-between;
+  height: 5rem;
+  align-items: center;
+  position: fixed;
+  width: 100vw;
+}
+
+header a{
+  text-decoration: none;
+  margin-left: 10rem;
+}
+
+header .nav {
+  margin-right: 10rem;
+}
+header .nav ul {
+  display: flex;
+}
+
+header .nav ul li{
+  list-style: none;
+  margin-left: 2.5rem;
+  font-size: .9rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+header .nav ul li:hover{
+  color: #1ED760;
+}
+
+.ul-premium{
+  background: #509bf5 !important;
+}
+.ul-premium li:hover{
+  color: #000 !important;
+}
+.header-premium{
+  background: #509bf5 !important;
+}
+
+header .logo{
+  width: 8rem;
+}

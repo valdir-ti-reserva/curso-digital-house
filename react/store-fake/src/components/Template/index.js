@@ -1,4 +1,4 @@
-import { AppBar, Toolbar, Typography, Container } from '@material-ui/core';
+import { AppBar, Toolbar, Typography, Container, Link, Divider} from '@material-ui/core';
 
 export default function Template(props) {
   return (
@@ -6,9 +6,24 @@ export default function Template(props) {
       <header>
         <AppBar position="static">
           <Toolbar>
+            
             <Typography variant='h6'>
-              Fake Store
+              <Link href={"/"} color="inherit">
+                Fake Store
+              </Link>
             </Typography>
+
+            <Divider orientation="vertical" flexItem />
+            
+            <Typography variant='h7'>
+              <Link href={"/users"} color="inherit" >
+                Users
+              </Link>
+              <Link href={"/users/create"} color="inherit" >
+                Create User
+              </Link>
+            </Typography>
+
           </Toolbar>
         </AppBar>
       </header>

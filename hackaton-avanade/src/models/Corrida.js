@@ -16,7 +16,11 @@ const Corrida = (sequelize, dataTypes) => {
       destino: {
         type: dataTypes.STRING(300),
         allowNull: false,
-      },      
+      },
+      estado: {
+        type: dataTypes.STRING(100),
+        allowNull: false,
+      },    
       createdAt: {
         allowNull: false,
         type: dataTypes.DATE,

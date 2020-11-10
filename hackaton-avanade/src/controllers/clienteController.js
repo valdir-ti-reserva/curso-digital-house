@@ -2,7 +2,6 @@ const { Cliente } = require('../models/index');
 const clienteController = {
     async index(req, res) {
         const clientes = await Cliente.findAll();
-
         return res.status(200).json(clientes)
     },
     async details(req, res){

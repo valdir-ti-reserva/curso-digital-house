@@ -7,16 +7,17 @@ header {
   align-items: center;
   position: fixed;
   width: 100vw;
+  line-height: 0rem;
 }
 
 header a{
   text-decoration: none;
-  margin-left: 10rem;
+  margin-left: 24rem;
   color: #fff;
 }
 
 header .nav {
-  margin-right: 10rem;
+  margin-right: 24rem;
 }
 header .nav ul {
   display: flex;
@@ -45,5 +46,5 @@ header .nav ul li:hover{
 }
 
 header .logo{
-  width: 8rem;
+  width: 8.2rem;
 }

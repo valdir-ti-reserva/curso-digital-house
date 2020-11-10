@@ -10,7 +10,7 @@ export default function Premium() {
   return (
     <>
     <Header premium={true}/>
-    <Banner>
+    <Banner page="premium">
       <Title page='premium' size="5">Aproveite 1 mês grátis de Premium</Title>
       <Paragraph page='premium' size="1">Depois, apenas R$ 16,90/mês. Cancele quando quiser.</Paragraph>
       <div className="button">

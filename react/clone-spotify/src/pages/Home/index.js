@@ -9,11 +9,11 @@ export default function Home() {
   return (
       <>
         <Header premium={false}/>
-        <Banner>
+        <Banner page="home">
           <Title page='home' size="10">Escutar muda tudo</Title>
           <Paragraph page='home' size="1">Milhões de músicas e podcasts para explorar. E nem precisa de cartão de crédito.</Paragraph>
           <div className="button">
-            <Button page='home'>Obtenha o Spotify</Button>
+            <Button page='home' size="15">Obtenha o Spotify Free</Button>
           </div>
         </Banner>
         {/* <Footer/> */}

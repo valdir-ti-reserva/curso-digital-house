@@ -39,7 +39,7 @@ const Auth = {
     const newPassword = bcrypt.hashSync(password, 10);
     const now = new Date();
     const [idUser, err] = await connection.query(
-      `INSERT INTO users (name, email, password, createdAt, updatedAt) VALUES ($name, $email, $password, $createdAt, $updatedAt)`,
+      'INSERT INTO users (name, email, password, createdAt, updatedAt) VALUES ($name, $email, $password, $createdAt, $updatedAt)',
       {
         bind: {
           name,

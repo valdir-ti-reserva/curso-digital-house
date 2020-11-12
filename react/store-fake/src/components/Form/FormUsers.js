@@ -64,7 +64,7 @@ export default function FormUsers(props) {
 
       <Form>
 
-          <Form.Group controlId="formBasicName">
+          <Form.Group >
             <Form.Label>Nome</Form.Label>
             <Form.Control 
               type="text" 
@@ -84,7 +84,7 @@ export default function FormUsers(props) {
             />
           </Form.Group>
 
-          <Form.Group controlId="formBasicSobrenome">
+          <Form.Group >
             <Form.Label>Sobrenome</Form.Label>
             <Form.Control 
               type="text" 
@@ -104,7 +104,7 @@ export default function FormUsers(props) {
             />
           </Form.Group>
           
-          <Form.Group controlId="formBasicEmail">
+          <Form.Group >
             <Form.Label>Email</Form.Label>
             <Form.Control 
               type="email" 
@@ -121,7 +121,7 @@ export default function FormUsers(props) {
             />
           </Form.Group>
           
-          <Form.Group controlId="formBasicEmail">
+          <Form.Group >
             <Form.Label>Telefone</Form.Label>
             <Form.Control 
               type="text" 
@@ -138,7 +138,7 @@ export default function FormUsers(props) {
             />
           </Form.Group>
 
-          <Form.Group controlId="formBasicUsername">
+          <Form.Group >
             <Form.Label>Username</Form.Label>
             <Form.Control 
               type="text" 
@@ -155,7 +155,7 @@ export default function FormUsers(props) {
             />
           </Form.Group>
           
-          <Form.Group controlId="formBasicPassword">
+          <Form.Group >
             <Form.Label>Senha</Form.Label>
             <Form.Control 
               type="password" 
@@ -172,7 +172,7 @@ export default function FormUsers(props) {
             />
           </Form.Group>
                     
-          <Form.Group controlId="formBasicCidade">
+          <Form.Group >
             <Form.Label>Cidade</Form.Label>
             <Form.Control   
               type="text" 
@@ -192,7 +192,7 @@ export default function FormUsers(props) {
             />
           </Form.Group>
 
-          <Form.Group controlId="formBasicRua">
+          <Form.Group >
             <Form.Label>Rua</Form.Label>
             <Form.Control 
               type="text" 
@@ -212,7 +212,7 @@ export default function FormUsers(props) {
             />
           </Form.Group>
           
-          <Form.Group controlId="formBasicNumero">
+          <Form.Group >
             <Form.Label>Número</Form.Label>
             <Form.Control 
               type="text" 
@@ -232,7 +232,7 @@ export default function FormUsers(props) {
             />
           </Form.Group>
           
-          <Form.Group controlId="formBasicCEP">
+          <Form.Group >
             <Form.Label>CEP</Form.Label>
             <Form.Control 
               type="text" 
@@ -252,7 +252,7 @@ export default function FormUsers(props) {
             />
           </Form.Group>
           
-          <Form.Group controlId="formBasicLatitude">
+          <Form.Group >
             <Form.Label>Latitude</Form.Label>
             <Form.Control 
               type="text" 
@@ -274,7 +274,7 @@ export default function FormUsers(props) {
             />
           </Form.Group>
           
-          <Form.Group controlId="formBasicLongitude">
+          <Form.Group>
             <Form.Label>Longitude</Form.Label>
             <Form.Control 
               type="text" 

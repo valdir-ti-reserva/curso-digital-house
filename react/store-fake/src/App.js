@@ -1,13 +1,21 @@
-import './App.css';
+import 'react-toastify/dist/ReactToastify.css';
+
 import Routes from './Routes';
 import Template from './components/Template';
-import 'react-toastify/dist/ReactToastify.css';
+
+import './App.css';
+
+// Redux
+import store from './store';
+import { Provider } from 'react-redux';
 
 function App () {
     return (
-        <Template>
-            <Routes />
-        </Template>
+        <Provider store={store} >
+            <Template>
+                <Routes />
+            </Template>
+        </Provider>
     );
 }
 

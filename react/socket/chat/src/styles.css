@@ -1,0 +1,6 @@
+html, body {
+  height: 100vh;
+  background: rgb(71,118,242);
+  background: linear-gradient(176deg, rgba(71,118,242,1) 31%, rgba(185,40,193,1) 100%, rgba(0,212,255,1) 100%);
+  width: 100vw;
+}
